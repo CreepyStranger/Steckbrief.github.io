@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Steckbrief Versuch 4</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Oliver Porebski</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.instagram.com/oliver.prbk/">Instagram</a></li>
+        <li><a href="https://www.probat.com/" class="active">Probat</a></li>
+      </ul>
+  </header>
+  <section>
+    <img src="water.png" id="water">
+    <img src="moon.png" id="moon">
+    <img src="stars.png" id="stars">
+    <h2 id="text">Steckbrief</h2>
+  </section>
+  <div class="sec" id="sec">
+    <h2>Steckbrief - Oliver Porebski</h2>
+    <p>Vorname: Oliver <br> Nachname: Porebski <br> Geburtsdatum: 28.04.2007 <br> Geburtsort: Emmerich <br> Muttersprache: Deutsch <br> Sonstige Sprachen: Polnisch, Englisch, Niederländisch <br> Adresse: Rees-Millingen Steinofenweg 63 <br> Haarfarbe: Braun <br> Augenfarbe: normalerweise blau <br> Lieblingsfarbe: Blau/Weiß<br> Lielingsessen: Piroggen/Hähnchen <br> Lieblingsspiel of all time: Mario Kart Wii <br> Lieblingspiel momentan: Warzone <br> Hobby: Fußball</p>
+  </div>
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let water = document.getElementById('water');
+    let text = document.getElementById('text');
+
+    window.addEventListener('scroll',function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+    })
+  </script>
+</body>
+</html>
